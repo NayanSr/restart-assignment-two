@@ -1,6 +1,7 @@
 
 import './App.css';
 import Navigation from '../src/components/Navigation/Navigation'
+import Footer from './components/Navigation/Footer/Footer';
 
 function App() {
 
@@ -11,7 +12,7 @@ function App() {
       <div className='flex-1'>
         main
       </div>
-      <p>footer</p>
+      <Footer/>
     </div>
   )
 }

@@ -51,7 +51,7 @@ const Navigation = () => {
               {menus}
             </ul>
           </div>
-          <a className="btn btn-ghost text-2xl font-bold">CS-Ticket-System</a>
+          <a className="btn btn-ghost text-2xl font-bold">CS <span className="w-6 h-0.75 bg-black"></span>Ticket-System</a>
         </div>
 
         <div className="flex items-center">

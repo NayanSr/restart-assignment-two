@@ -1,6 +1,8 @@
 import vactorImg1 from "../../assets/vector1.png";
 
 const Banner = ({resolved, inProgress}) => {
+
+  console.log(resolved)
   return (
     <div className="flex gap-16 justify-center  my-8">
       

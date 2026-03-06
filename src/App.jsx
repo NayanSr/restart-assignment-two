@@ -9,7 +9,15 @@ import { useState } from "react";
 function App() {
   const tickets = fetch("tickets.json").then((res) => res.json());
   const[inProgress, setInProgress]= useState([]);
-  const[resolved, setResolved]= useState([])
+  const[resolved, setResolved]= useState([]);
+
+  const handleCompleted=(item)=>{
+    console.log(item)
+  const newResolved= [...resolved, item];
+   setResolved(newResolved);
+   const restInProgress= inProgress.filter(i=>i.id!==item.id);
+  setInProgress(restInProgress)
+  }
 
   return (
     <div className="max-w-7xl mx-auto border-2 border-green-800 p-1 flex flex-col min-h-screen bg-gray-100">
@@ -23,7 +31,7 @@ function App() {
             </div>
           }
         >
-          <Main tickets={tickets} setInProgress={setInProgress} setResolved={setResolved} resolved={resolved} inProgress={inProgress} />
+          <Main tickets={tickets} setInProgress={setInProgress} setResolved={setResolved} resolved={resolved} inProgress={inProgress} handleCompleted={handleCompleted} />
         </Suspense>
       </div>
       <Footer />

@@ -23,7 +23,7 @@ const Navigation = () => {
   );
 
   return (
-    <div className="">
+    <div className=" bg-white">
       <div className="navbar justify-between p-0">
         <div className="p-0">
           <div className="dropdown">
@@ -58,7 +58,7 @@ const Navigation = () => {
           <div className="hidden lg:flex">
             <ul className="menu menu-horizontal px-1 text-[16px] gap-6">{menus}</ul>
           </div>
-          <a className="btn bg-gradient-to-br from-[#632EE3] to-[#9F62F2] ml-6 font-semibold text-[16px]">+ New Ticket</a>
+          <a className="btn bg-linear-to-br from-[#632EE3] to-[#9F62F2] ml-6 font-semibold text-[16px]">+ New Ticket</a>
         </div>
       </div>
     </div>

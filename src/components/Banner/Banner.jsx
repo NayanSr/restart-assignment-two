@@ -1,6 +1,6 @@
 import vactorImg1 from "../../assets/vector1.png";
 
-const Banner = () => {
+const Banner = ({resolved, inProgress}) => {
   return (
     <div className="flex gap-16 justify-center  my-8">
       
@@ -27,7 +27,7 @@ const Banner = () => {
           <div>
             <h3 className="text-xl font-semibold">In-Progress</h3>
           <p className="text-sm mt-2">
-            Dynamic content
+            {inProgress.length}
           </p>
           </div>
         </div>
@@ -49,7 +49,7 @@ const Banner = () => {
         <div className=" p-6 text-white text-center">
           <h3 className="text-xl font-semibold">Resolved</h3>
           <p className="text-sm mt-2">
-            Dynamic content
+           {resolved.length}
           </p>
         </div>
       </div>

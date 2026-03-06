@@ -1,0 +1,137 @@
+[
+  {
+    "id": 1,
+    "title": "Login Issue",
+    "description": "User cannot login to the dashboard",
+    "customer": "Rahim Ahmed",
+    "priority": "High",
+    "status": "Open",
+    "createdAt": "2026-03-01"
+  },
+  {
+    "id": 2,
+    "title": "Payment Failed",
+    "description": "Customer unable to complete payment using card",
+    "customer": "Karim Uddin",
+    "priority": "High",
+    "status": "Open",
+    "createdAt": "2026-03-01"
+  },
+  {
+    "id": 3,
+    "title": "Password Reset Problem",
+    "description": "Reset password email not received",
+    "customer": "Nusrat Jahan",
+    "priority": "Medium",
+    "status": "Open",
+    "createdAt": "2026-03-02"
+  },
+  {
+    "id": 4,
+    "title": "Website Slow",
+    "description": "Homepage loading very slowly",
+    "customer": "Tanvir Hasan",
+    "priority": "Medium",
+    "status": "Open",
+    "createdAt": "2026-03-02"
+  },
+  {
+    "id": 5,
+    "title": "Order Tracking Error",
+    "description": "Order tracking page showing error",
+    "customer": "Sadia Islam",
+    "priority": "Low",
+    "status": "Open",
+    "createdAt": "2026-03-03"
+  },
+  {
+    "id": 6,
+    "title": "Profile Update Failed",
+    "description": "User cannot update profile information",
+    "customer": "Mahmudul Hasan",
+    "priority": "Medium",
+    "status": "Open",
+    "createdAt": "2026-03-03"
+  },
+  {
+    "id": 7,
+    "title": "Email Notification Bug",
+    "description": "Notification emails not being sent",
+    "customer": "Farzana Akter",
+    "priority": "High",
+    "status": "Open",
+    "createdAt": "2026-03-03"
+  },
+  {
+    "id": 8,
+    "title": "Checkout Page Crash",
+    "description": "Checkout page crashes during order",
+    "customer": "Imran Hossain",
+    "priority": "High",
+    "status": "Open",
+    "createdAt": "2026-03-04"
+  },
+  {
+    "id": 9,
+    "title": "Search Not Working",
+    "description": "Search function returns no results",
+    "customer": "Sharmin Akter",
+    "priority": "Medium",
+    "status": "Open",
+    "createdAt": "2026-03-04"
+  },
+  {
+    "id": 10,
+    "title": "Image Upload Error",
+    "description": "Users cannot upload profile pictures",
+    "customer": "Rashed Khan",
+    "priority": "Low",
+    "status": "Open",
+    "createdAt": "2026-03-04"
+  },
+  {
+    "id": 11,
+    "title": "Mobile Layout Broken",
+    "description": "Website layout broken on mobile devices",
+    "customer": "Tania Sultana",
+    "priority": "Medium",
+    "status": "Open",
+    "createdAt": "2026-03-05"
+  },
+  {
+    "id": 12,
+    "title": "API Data Not Loading",
+    "description": "Dashboard data not loading from API",
+    "customer": "Jahidul Islam",
+    "priority": "High",
+    "status": "Open",
+    "createdAt": "2026-03-05"
+  },
+  {
+    "id": 13,
+    "title": "Logout Not Working",
+    "description": "User cannot logout from account",
+    "customer": "Mithila Rahman",
+    "priority": "Low",
+    "status": "Open",
+    "createdAt": "2026-03-05"
+  },
+  {
+    "id": 14,
+    "title": "Coupon Code Invalid",
+    "description": "Valid coupon code showing invalid error",
+    "customer": "Saif Ahmed",
+    "priority": "Medium",
+    "status": "Open",
+    "createdAt": "2026-03-05"
+  },
+  {
+    "id": 15,
+    "title": "Account Verification Issue",
+    "description": "Verification email link not working",
+    "customer": "Lubna Chowdhury",
+    "priority": "High",
+    "status": "Open",
+    "createdAt": "2026-03-05"
+  }
+]

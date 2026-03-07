@@ -1,25 +1,20 @@
-// {
-//     "id": 1,
-//     "title": "Login Issue",
-//     "description": "User cannot login to the dashboard",
-//     "customer": "Rahim Ahmed",
-//     "priority": "High",
-//     "status": "Open",
-//     "createdAt": "2026-03-01"
-//   }
-const TicketCard = ({ st, setInProgress, inProgress }) => {
+import { toast } from 'react-toastify';
+const TicketCard = ({ st, setInProgress, inProgress, data, setData }) => {
   const { id, title, description, customer, priority, status, createdAt } = st;
 
   const handleCard = (clickedId, clickedTitle) => {
-    alert(`card clicked, ${clickedId}`);
-    console.log("clicked on", clickedId);
+    toast(`Adder to in Progress, ${clickedId}`);
     const addedClicked = [
       ...inProgress,
       { id: clickedId, taskTitle: clickedTitle },
     ];
 
-    console.log("addedClicked", addedClicked);
     setInProgress(addedClicked);
+
+    const restData= data.filter(dt=>dt.id!==clickedId);
+    // console.log(restData);
+    setData(restData)
+
   };
 
   return (

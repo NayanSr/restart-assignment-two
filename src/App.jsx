@@ -5,18 +5,21 @@ import Banner from "./components/Banner/Banner";
 import Main from "./components/Main/Main";
 import { Suspense } from "react";
 import { useState } from "react";
+import { ToastContainer,toast} from 'react-toastify';
 
 function App() {
   const tickets = fetch("tickets.json").then((res) => res.json());
+  
   const[inProgress, setInProgress]= useState([]);
   const[resolved, setResolved]= useState([]);
 
   const handleCompleted=(item)=>{
-    console.log(item)
+    // console.log(item)
   const newResolved= [...resolved, item];
    setResolved(newResolved);
    const restInProgress= inProgress.filter(i=>i.id!==item.id);
-  setInProgress(restInProgress)
+  setInProgress(restInProgress);
+  toast("removed from in in progress and added to resolved")
   }
 
   return (
@@ -35,6 +38,7 @@ function App() {
         </Suspense>
       </div>
       <Footer />
+        <ToastContainer />
     </div>
   );
 }

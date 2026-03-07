@@ -1,8 +1,11 @@
 import { use } from "react"
 import TicketCard from "../TicketCard/TicketCard"
+import { useState } from "react";
 
 const Main = ({tickets,setResolved,setInProgress, inProgress, resolved, handleCompleted }) => {
-const allTickets= use(tickets);
+    
+    const allTickets= use(tickets);
+    const [data,setData]=useState(allTickets)
 
 // console.log(allTickets)
 
@@ -18,7 +21,7 @@ const clickedButton=(item)=>{
             <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
 
             {
-                allTickets.map(st=><TicketCard key={st.id} st={st} setInProgress={setInProgress} setResolved={setResolved} inProgress={inProgress} resolved={resolved}/>)
+                data.map(st=><TicketCard key={st.id} st={st} setInProgress={setInProgress} setResolved={setResolved} inProgress={inProgress} resolved={resolved} data={data} setData={setData}/>)
             }
             </div>
         </section>

@@ -6,16 +6,18 @@
 
 Example:
 
-```jsx
+
 const element = <h1>Hello, World!</h1>;
+
+
 Although it looks like HTML, it is actually JavaScript that React converts into function calls.
 
 
 ## 2. What is the difference between State and Props?
 
-**Props: ** Props are data passed from a parent component to a child component. It cannot be changed by the child.
+**Props:** Props are data passed from a parent component to a child component. It cannot be changed by the child.
 
-**State :** State is data managed inside a component. It can be changed using setState / useState
+**State:** State is data managed inside a component. It can be changed using setState / useState
 
 
 ## 3. What is the useState hook, and how does it work?
